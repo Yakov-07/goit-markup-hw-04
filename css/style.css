@@ -36,7 +36,7 @@ header {
   letter-spacing: 0.03em;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: Robota;
+  font-family: "Raleway";
 }
 .logo:hover,
 .logo:focus {
@@ -50,7 +50,7 @@ header {
   letter-spacing: 0.03em;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Roboto";
+  font-family: "Raleway";
 }
 /* nav */
 .site-nav {
@@ -266,7 +266,7 @@ footer {
   text-decoration: none;
   letter-spacing: 0.03em;
   line-height: 1.16;
-  font-family: Robota;
+  font-family: "Raleway";
 }
 .logo-footer:hover,
 .logo-footer:focus {
