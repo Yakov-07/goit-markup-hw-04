@@ -41,6 +41,8 @@ header {
 .logo:hover,
 .logo:focus {
   color: black;
+  outline: 0;
+  outline-offset: 0;
 }
 .logo-web {
   color: #4d5ae5;
@@ -74,7 +76,9 @@ header {
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: black;
+  color: var(--primary-brand);
+  outline: 0;
+  outline-offset: 0;
 }
 
 .address {
@@ -92,8 +96,11 @@ header {
   text-decoration: none;
   letter-spacing: 0.02em;
 }
-.contact:hover {
-  color: black;
+.contact:hover,
+.contact:focus {
+  color: var(--primary-brand);
+  outline: 0;
+  outline-offset: 0;
 }
 
 ul {
@@ -132,6 +139,13 @@ ul {
   margin-right: auto;
   width: 170px;
   height: 51px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .overlay {
@@ -315,6 +329,13 @@ footer {
   background-color: var(--primary-brand);
 }
 
+.portfolio-button:focus {
+  color: var(--backround-color-header);
+  background-color: var(--primary-brand);
+  outline: 0;
+  outline-offset: 0;
+}
+
 .item-portfolio {
   margin-bottom: 72px;
   margin-left: auto;
@@ -393,6 +414,18 @@ p {
   margin-bottom: 0;
 }
 
+.test:hover {
+  border: 0.5px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.test:focus {
+  border: 0.5px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .text-portfolio {
   padding-left: 16px;
   padding-bottom: 16px;
@@ -411,24 +444,26 @@ p {
 
 .container-svg {
   width: 264px;
-  background: #F4F4FD;
+  background: #f4f4fd;
   border-radius: 4px;
   height: 112px;
   justify-content: center;
-    align-items: center;
-    display: flex;
+  align-items: center;
+  display: flex;
+  margin-bottom: 8px;
 }
 
 .team-svg {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 8px;
+  padding: 0;
 }
 
 .svg-icon-team {
   width: 16px;
   height: 16px;
-  
 }
 
 .qwe {
@@ -445,6 +480,12 @@ p {
   margin-right: 24px;
 }
 
+.qwe:hover {
+}
+
+.qwe:focus {
+}
+
 .Customers {
   text-align: center;
   font-weight: 700;
@@ -456,16 +497,31 @@ p {
 }
 
 .icon-customers {
-  width: 140px;
-  height: 56px;
+  width: 168px;
+  height: 88px;
+  fill: #8e8f99;
+}
+
+.icon-customers:hover,
+.icon-customers:focus {
+  fill: var(--primary-brand);
 }
 
 .customers-logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #8E8F99;
+  border: 1px solid #8e8f99;
   border-radius: 4px;
+}
+
+.customers-logo:hover {
+  border-color: var(--primary-brand);
+}
+
+.customers-logo:focus-within {
+  border-color: var(--primary-brand);
+  color: #4d5ae5;
 }
 
 .content-customers {
@@ -483,7 +539,7 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .content-footer {
@@ -491,7 +547,7 @@ p {
 }
 
 .icon-footer {
-  align-self:center;
+  align-self: center;
   justify-content: start;
   display: flex;
   flex-wrap: wrap;
@@ -500,6 +556,10 @@ p {
 
 .svg-footer {
   margin-left: 120px;
+}
+
+.list-footer {
+  padding: 0px;
 }
 
 .svg-icon-footer {
@@ -514,4 +574,14 @@ p {
 
 .svg-icon-footer:not(:last-child) {
   margin-right: 24px;
+}
+
+.svg-icon-footer:hover {
+  background-color: #31d0aa;
+}
+
+.svg-icon-footer:focus {
+  background-color: #31d0aa;
+  outline: 0;
+  outline-offset: 0;
 }
